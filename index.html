@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunday Mock Auction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="menu-icon">≡</div>
+    <div class="wallet">
+      ₹ Wallet Amount: <span id="walletAmount">25 Cr</span>
+    </div>
+    <div class="error-message" id="errorMessage">Greedily bid and lost</div>
+  </header>
+
+  <!-- Main Auction Section -->
+  <main class="auction-container">
+    <!-- Left Panel: Current Player -->
+    <section class="player-card">
+      <h2>Current Player</h2>
+      <div class="player-info">
+        <!-- Placeholder image -->
+        <img src="player.jpg" alt="Player Image" class="player-img">
+        <p>Name: <span id="playerName">Player 1</span></p>
+        <p>Base Price: ₹ <span id="basePrice">2 Cr</span></p>
+        <p>Highest Bidder: <span id="highestBidder">None</span></p>
+        <button id="buyPlayerBtn">Buy Player</button>
+      </div>
+    </section>
+
+    <!-- Middle Panel: Timer & Team -->
+    <section class="mid-panel">
+      <div class="timer">⏱ Time Left: <span id="timer">30</span> s</div>
+      <div class="your-players">
+        <h3>Your Players</h3>
+        <ul id="yourPlayerList">
+          <!-- Dynamically filled -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Right Panel: Bidding -->
+    <section class="bid-section">
+      <h2>Place Your Bid</h2>
+      <p>Current Price: ₹ <span id="currentPrice">2 Cr</span></p>
+      <p>Min Increment: ₹ 1 Lakh</p>
+      <div class="bid-controls">
+        <button id="decreaseBid">-</button>
+        <span id="bidAmount">2 Cr</span>
+        <button id="increaseBid">+</button>
+      </div>
+      <button id="submitBid">Submit Bid</button>
+      <label><input type="checkbox" id="autoBidDisable"> Disable Auto-Bid</label>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
