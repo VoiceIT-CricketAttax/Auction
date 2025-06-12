@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sunday Mock Auction</title>
+  <title>Auction</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
   <header class="top-bar">
     <div class="menu-icon">≡</div>
     <div class="wallet">
-      ₹ Wallet Amount: <span id="walletAmount">25 Cr</span>
+      ₹ Wallet Amount: <span id="walletAmount">100 Cr</span>
     </div>
     <div class="error-message" id="errorMessage">Greedily bid and lost</div>
   </header>
@@ -31,18 +31,14 @@
       </div>
     </section>
 
-    <!-- Middle Panel: Timer & Team -->
     <section class="mid-panel">
-      <div class="timer">⏱ Time Left: <span id="timer">30</span> s</div>
       <div class="your-players">
         <h3>Your Players</h3>
         <ul id="yourPlayerList">
-          <!-- Dynamically filled -->
         </ul>
       </div>
     </section>
 
-    <!-- Right Panel: Bidding -->
     <section class="bid-section">
       <h2>Place Your Bid</h2>
       <p>Current Price: ₹ <span id="currentPrice">2 Cr</span></p>
