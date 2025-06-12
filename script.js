@@ -1,16 +1,14 @@
 // Initial state
-let wallet = 250000000; // 25 Cr in paise
+let wallet = 1000000000; // 25 Cr in paise
 let currentBid = 20000000; // 2 Cr in paise
 let minIncrement = 100000; // ₹1 Lakh in paise
-let timerValue = 30;
-let timerInterval = null;
 
 const walletAmountEl = document.getElementById("walletAmount");
 const currentPriceEl = document.getElementById("currentPrice");
 const bidAmountEl = document.getElementById("bidAmount");
 const highestBidderEl = document.getElementById("highestBidder");
 const errorMessageEl = document.getElementById("errorMessage");
-const timerEl = document.getElementById("timer");
+
 const yourPlayerListEl = document.getElementById("yourPlayerList");
 
 // Format paise to Cr
